@@ -1,5 +1,4 @@
 import random 
-
 def get_number_of_colors_1():
     number_of_colors_1 = 0
 
@@ -14,7 +13,6 @@ def get_number_of_colors_1():
         except: 
             print("ERROR: must be a number between 0-5")
     return number_of_colors_1
-
 
 def get_number_of_colors_2():
     number_of_colors_2 = 0
@@ -31,13 +29,11 @@ def get_number_of_colors_2():
             print("ERROR: must be a number between 0-3")
     return number_of_colors_2
 
-
 def main(): 
     small_color_list = ["red", "orange", "light orange", "yellow", "light yellow"
              "teal", "light teal", "light green", "green", "light blue",
              "blue", "royal blue", "light purple", "purple", "magenta", 
              "light pink", "pink", "white"]
-
     large_color_list = ["red", "orange", "yellow", "green", "teal", "blue", "purple",
                      "pink", "grey", "white", "multicolor"]
 
