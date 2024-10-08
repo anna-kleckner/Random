@@ -3,8 +3,6 @@ def main():
     lowercase = test.lower()
     simple_string = ''.join([*filter(str.isalnum, lowercase)])
     backwards_string = simple_string[::-1]
-
-    print(backwards_string)
     
     if simple_string == backwards_string:
         print(f"{test} is a palindrome")
