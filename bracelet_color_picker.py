@@ -41,17 +41,17 @@ def main():
     number_of_colors_2 = get_number_of_colors_2()
 
     print(f"\nSmall bead colors:")
-    if number_of_colors_1 != 0:
+    if number_of_colors_1 == 0:
+        print("none")
+    else:
         for n in range(number_of_colors_1):
             print(f"Color {n+1}: {random.choice(small_color_list)}")
-    else:
-        print("none")
     
     print(f"\nLarge bead colors:")
-    if number_of_colors_2 != 0:
+    if number_of_colors_2 == 0:
+        print("none")
+    else:
         for n in range(number_of_colors_2):
             print(f"Color {n+1}: {random.choice(large_color_list)}")
-    else:
-        print("none")
 
 main()
