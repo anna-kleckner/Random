@@ -1,7 +1,7 @@
 def get_secret_number():
     while True:
         try:
-            secret_number = int(input("Enter the secret number here: "))
+            secret_number = int(input(f"\nEnter the secret number here: "))
             if secret_number <= 0:
                 print("Number must be a whole number great than 0")
                 continue
@@ -19,16 +19,22 @@ def main():
     inncorrect_guesses = 0
     while True:             
         try:
-            user_guess = int(input(f"Guess: "))
+            user_guess = int(input("\nGuess: "))
             if user_guess == secret_number: 
-                print("DING DING DING")
+                print("\nDING DING DING")
                 break                
-            if user_guess != secret_number:
-                print("Incorrect")
+            elif user_guess > secret_number:
+                print(f"Lower \nGuesses left: {2-inncorrect_guesses}")
                 inncorrect_guesses = inncorrect_guesses + 1
                 if inncorrect_guesses == 3:
-                    print(f"Correct answer is: {secret_number}")
-                    break                
+                    print(f"\nThe correct answer is: {secret_number}")
+                    break  
+            elif user_guess < secret_number:
+                print(f"Higher \nGuesses left: {2-inncorrect_guesses}")
+                inncorrect_guesses = inncorrect_guesses + 1
+                if inncorrect_guesses == 3:
+                    print(f"\nThe correct answer is: {secret_number}")
+                    break               
             else: 
                  break
         except:
