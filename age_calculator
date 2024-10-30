@@ -1,0 +1,12 @@
+from datetime import datetime 
+
+def main(): 
+    user_birthday_input = input(str("Enter your birthday (YYYY-MM-DD): "))
+    
+    user_birthday = datetime.strptime(user_birthday_input, "%Y-%m-%d")
+
+    now = datetime.today()
+
+    print(f"You are {now.year - user_birthday.year} years, {now.month - user_birthday.month} month(s), and {now.day - user_birthday.day} days old")
+
+main()
