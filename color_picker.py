@@ -17,18 +17,9 @@ def get_number_of_colors():
 
 
 def main():
-    color_list = ["magenta", "pink", "glow orange", "neon orange", 
-                 "yellow", 
-                 "green", 
-                 "teal", 
-                 "glow blue", 
-                 "neon blue",
-                 "royal blue", 
-                 "light purple",
-                 "purple", 
-                 "sparkles",
-                 "white",
-                 "black"]
+    color_list = ["magenta", "pink", "glow orange", "neon orange", "yellow", 
+                 "green", "teal", "glow blue", "neon blue", "royal blue", 
+                 "light purple", "purple", "sparkles", "white", "black"]
 
     number_of_colors = get_number_of_colors()
 
