@@ -1,3 +1,5 @@
+import os
+
 def get_secret_number():
     while True:
         try:
@@ -14,7 +16,8 @@ def get_secret_number():
 
 def main():
     secret_number = get_secret_number()
-    print(f"\n\n\n\n\n\n\n\n\n\n\n\n")
+    #print(f"\n\n\n\n\n\n\n\n\n\n\n\n")
+    os.system('clear')
 
     inncorrect_guesses = 0
     while True:             
